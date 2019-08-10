@@ -1,0 +1,5 @@
+redentials cache: API:60891
+        Principal: jlensing@CODAM.NL
+
+		  Issued                Expires               Principal
+		  Aug  5 13:06:49 2019  Aug 12 13:06:12 2019  krbtgt/CODAM.NL@CODAM.NL
