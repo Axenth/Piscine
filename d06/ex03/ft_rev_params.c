@@ -6,11 +6,10 @@
 /*   By: jlensing <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/08/13 14:03:57 by jlensing       #+#    #+#                */
-/*   Updated: 2019/08/13 14:12:15 by jlensing      ########   odam.nl         */
+/*   Updated: 2019/08/13 16:32:07 by jlensing      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 
 void	ft_putchar(char c);
 
@@ -20,7 +19,7 @@ int		main(int argc, char **argv)
 	int i2;
 
 	i = 1;
-	while (argv[i] != NULL)
+	while (i < argc)
 	{
 		i++;
 	}
