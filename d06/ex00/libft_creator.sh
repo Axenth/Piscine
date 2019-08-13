@@ -1,0 +1,1 @@
+ar rc libft.a ft*.o
