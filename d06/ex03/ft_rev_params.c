@@ -6,10 +6,9 @@
 /*   By: jlensing <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/08/13 14:03:57 by jlensing       #+#    #+#                */
-/*   Updated: 2019/08/13 16:32:07 by jlensing      ########   odam.nl         */
+/*   Updated: 2019/08/13 17:08:51 by jlensing      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 void	ft_putchar(char c);
 

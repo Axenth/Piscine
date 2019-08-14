@@ -6,9 +6,11 @@
 /*   By: jlensing <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/08/13 15:33:40 by jlensing       #+#    #+#                */
-/*   Updated: 2019/08/13 17:02:10 by jlensing      ########   odam.nl         */
+/*   Updated: 2019/08/14 11:37:39 by jlensing      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 void	ft_putchar(char c);
 
@@ -42,30 +44,40 @@ void	print(char *to_print)
 	ft_putchar('\n');
 }
 
+void	ft_swap(char **argv, int i)
+{
+	char *temp;
+
+	temp = argv[i];
+	argv[i] = argv[i + 1];
+	argv[i + 1] = temp;
+}
+
 int		main(int argc, char **argv)
 {
 	int		i;
 	int		i2;
-	char	*temp;
 
 	i2 = 1;
 	while (i2)
 	{
 		i2 = 0;
-		i = 0;
-		while (++i < argc - 1)
+		i = 1;
+		while (i < argc - 1)
 		{
 			if (ft_strcmp(argv[i], argv[i + 1]) > 0)
 			{
-				temp = argv[i];
-				argv[i] = argv[i + 1];
-				argv[i + 1] = temp;
+				ft_swap(argv, i);
 				i2 = 1;
 			}
+			i++;
 		}
 	}
-	i = 0;
-	while (++i < argc)
+	i = 1;
+	while (i < argc)
+	{
 		print(argv[i]);
+		i++;
+	}
 	return (0);
 }
