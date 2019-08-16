@@ -6,7 +6,7 @@
 /*   By: jlensing <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/08/15 18:50:12 by jlensing       #+#    #+#                */
-/*   Updated: 2019/08/15 21:34:43 by jlensing      ########   odam.nl         */
+/*   Updated: 2019/08/16 15:29:44 by jlensing      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ int		print_time(int i)
 {
 	if (i > 24)
 	{
-		printf("%d", 0);
 		return (i - 24);
 	}
 	if (i == 0)
@@ -33,7 +32,6 @@ int		print_time(int i)
 		return (i - 12);
 	else if (i < 10 && i > 0)
 	{
-		printf("%d", 0);
 		return (i);
 	}
 	return (i);

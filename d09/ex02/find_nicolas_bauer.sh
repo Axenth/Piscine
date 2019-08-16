@@ -6,8 +6,8 @@
 #    By: jlensing <marvin@codam.nl>                   +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/08/15 21:24:36 by jlensing       #+#    #+#                 #
-#    Updated: 2019/08/15 21:26:37 by jlensing      ########   odam.nl          #
+#    Updated: 2019/08/16 15:50:19 by jlensing      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
-grep -i "Nicolas	Bauer" $1 | wc -l;
+grep -viw "bomber" $1 | grep -iw "nicolas" | grep -iw "bauer" | rev | cut -f 2 | rev

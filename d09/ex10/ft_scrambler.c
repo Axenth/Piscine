@@ -1,45 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_rot42.c                                         :+:    :+:            */
+/*   ft_scrambler.c                                     :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: jlensing <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/08/15 22:05:47 by jlensing       #+#    #+#                */
-/*   Updated: 2019/08/16 12:34:13 by jlensing      ########   odam.nl         */
+/*   Created: 2019/08/16 04:37:41 by jlensing       #+#    #+#                */
+/*   Updated: 2019/08/16 15:57:11 by jlensing      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	swap(char c)
+void	ft_scrambler(int ***a, int *b, int *******c, int ****d)
 {
-	int i2;
+	int a1;
+	int b1;
+	int c1;
+	int d1;
 
-	i2 = 0;
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-	{
-		while (i2 != 42)
-		{
-			c++;
-			if (c == 91)
-				c = 65;
-			if (c == 123)
-				c = 97;
-			i2++;
-		}
-	}
-	i2 = 0;
-	return (c);
-}
-
-char	*ft_rot42(char *str)
-{
-	int i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		str[i] = swap(str[i]);
-		i++;
-	}
-	return (str);
+	a1 = ***a;
+	b1 = *b;
+	c1 = *******c;
+	d1 = ****d;
+	***a = b1;
+	*b = d1;
+	*******c = a1;
+	****d = c1;
 }
