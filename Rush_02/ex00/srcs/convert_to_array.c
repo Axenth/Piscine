@@ -6,12 +6,11 @@
 /*   By: jlensing <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/08/24 14:49:25 by jlensing       #+#    #+#                */
-/*   Updated: 2019/08/25 13:47:40 by jlensing      ########   odam.nl         */
+/*   Updated: 2019/08/25 14:54:31 by mpeerdem      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rush2.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 char	**convert_to_array(char *str)

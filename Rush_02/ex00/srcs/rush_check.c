@@ -6,12 +6,11 @@
 /*   By: mpeerdem <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/08/24 14:51:31 by mpeerdem      #+#    #+#                 */
-/*   Updated: 2019/08/25 13:41:05 by mpeerdem      ########   odam.nl         */
+/*   Updated: 2019/08/25 15:05:19 by mpeerdem      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rush2.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 void	check_rush(char *input)

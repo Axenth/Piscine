@@ -6,13 +6,15 @@
 /*   By: mpeerdem <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/08/24 10:24:56 by mpeerdem       #+#    #+#                */
-/*   Updated: 2019/08/25 13:45:46 by mpeerdem      ########   odam.nl         */
+/*   Updated: 2019/08/25 15:35:44 by mpeerdem      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef RUSH2_H
 # define RUSH2_H
 
+char	*read_input(void);
+char	*str_cat(char *s1, char *s2);
 int		amount_lines(char *str);
 int		is_rectangle(char **str);
 int		str_len(char *str);
