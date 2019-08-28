@@ -1,0 +1,283 @@
+Space : .
+Obstacle : o
+Filler : x
+Size : 10
+
+
+Inital grid: 
+
+10.ox
+...oo.oo..
+....o.....
+......oo..
+o......o..
+.o..o...o.
+.o........
+....o...o.
+..o....oo.
+..o..ooo..
+.o....oo..
+
+
+Completed grid: 
+
+
+Edited Map: 
+
+...oo.oo..
+....o.....
+......oo..
+o......o..
+.o..o...o.
+.o........
+....o...o.
+..o....oo.
+..o..ooo..
+.o....oo..
+
+
+
+Space : .
+Obstacle : o
+Filler : x
+Size : 10
+
+
+Inital grid: 
+
+10.ox
+...oo.oo..
+....o.....
+......oo..
+o......o..
+.o..o...o.
+.o........
+....o...o.
+..o....oo.
+..o..ooo..
+.o....oo..
+
+
+Completed grid: 
+
+
+Edited Map: 
+
+...oo.oo..
+....o.....
+......oo..
+o......o..
+.o..o...o.
+.o........
+....o...o.
+..o....oo.
+..o..ooo..
+.o....oo..
+
+
+
+Space : .
+Obstacle : o
+Filler : x
+Size : 10
+
+
+Inital grid: 
+
+10.ox
+...oo.oo..
+....o.....
+......oo..
+o......o..
+.o..o...o.
+.o........
+....o...o.
+..o....oo.
+..o..ooo..
+.o....oo..
+
+
+Completed grid: 
+
+
+Edited Map: 
+
+...oo.oo..
+....o.....
+......oo..
+o......o..
+.o..o...o.
+.o........
+....o...o.
+..o....oo.
+..o..ooo..
+.o....oo..
+
+
+
+Space : .
+Obstacle : o
+Filler : x
+Size : 10
+
+
+Inital grid: 
+
+10.ox
+...oo.oo..
+....o.....
+......oo..
+o......o..
+.o..o...o.
+.o........
+....o...o.
+..o....oo.
+..o..ooo..
+.o....oo..
+
+
+Completed grid: 
+
+
+Edited Map: 
+
+...oo.oo..
+....o.....
+......oo..
+o......o..
+.o..o...o.
+.o........
+....o...o.
+..o....oo.
+..o..ooo..
+.o....oo..
+
+
+
+Space : .
+Obstacle : o
+Filler : x
+Size : 10
+
+
+Inital grid: 
+
+10.ox
+...oo.oo..
+....o.....
+......oo..
+o......o..
+.o..o...o.
+.o........
+....o...o.
+..o....oo.
+..o..ooo..
+.o....oo..
+
+
+Completed grid: 
+
+
+Edited Map: 
+
+...oo.oo..
+....o.....
+......oo..
+o......o..
+.o..o...o.
+.o........
+....o...o.
+..o....oo.
+..o..ooo..
+.o....oo..
+
+
+
+Space : .
+Obstacle : o
+Filler : x
+Size : 10
+
+
+Inital grid: 
+
+10.ox
+...oo.oo..
+....o.....
+......oo..
+o......o..
+.o..o...o.
+.o........
+....o...o.
+..o....oo.
+..o..ooo..
+.o....oo..
+
+
+Completed grid: 
+
+
+Edited Map: 
+
+...oo.oo..
+....o.....
+......oo..
+o......o..
+.o..o...o.
+.o........
+....o...o.
+..o....oo.
+..o..ooo..
+.o....oo..
+
+
+
+Space : e
+Obstacle : r
+Filler : l
+Size : #!/usr/bin/p
+
+
+Inital grid: 
+
+#!/usr/bin/perl
+use warnings;
+use strict;
+die "program x y density" unless (scalar(@ARGV) == 3);
+my ($x, $y, $density) = @ARGV;
+print "$y.ox\n";
+for (my $i = 0; $i < $y; $i++) {
+	for (my $j = 0; $j < $x; $j++) {
+		if (int(rand($y) * 2) < $density) {
+			print "o";
+		}
+		else {
+			print ".";
+		}
+	}
+	print "\n";
+}
+
+Completed grid: 
+
+
+Edited Map: 
+
+use warnings;
+use strict;
+die "program x y density" unless (scalar(@ARGV) == 3);
+my ($x, $y, $density) = @ARGV;
+print "$y.ox\n";
+for (my $i = 0; $i < $y; $i++) {
+	for (my $j = 0; $j < $x; $j++) {
+		if (int(rand($y) * 2) < $density) {
+			print "o";
+		}
+		else {
+			print ".";
+		}
+	}
+	print "\n";
+
+
+

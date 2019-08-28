@@ -6,9 +6,11 @@
 /*   By: jlensing <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/08/15 22:05:47 by jlensing       #+#    #+#                */
-/*   Updated: 2019/08/16 12:34:13 by jlensing      ########   odam.nl         */
+/*   Updated: 2019/08/16 00:03:24 by jlensing      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 char	swap(char c)
 {
@@ -41,5 +43,13 @@ char	*ft_rot42(char *str)
 		str[i] = swap(str[i]);
 		i++;
 	}
+
 	return (str);
+}
+
+int main(void)
+{
+	char str[] = "abc def Z z a";
+	printf("%s", ft_rot42(str));
+	return(0);
 }

@@ -10,7 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_putchar(char c);
+#include <unistd.h>
+
+int		ft_putchar(char c){
+	write(1,&c,1);
+	return (0);
+}
 
 void	ft_putnbr(int nb)
 {
@@ -28,4 +33,10 @@ void	ft_putnbr(int nb)
 	{
 		ft_putchar(nb + '0');
 	}
+}
+
+int main(void)
+{
+	ft_putnbr(5003300);
+	return (0);
 }

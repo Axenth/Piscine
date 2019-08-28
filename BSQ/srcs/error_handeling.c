@@ -6,7 +6,7 @@
 /*   By: jlensing <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/08/26 13:41:26 by jlensing       #+#    #+#                */
-/*   Updated: 2019/08/26 18:11:19 by jlensing      ########   odam.nl         */
+/*   Updated: 2019/08/27 20:13:28 by jlensing      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,15 @@
 void	error_handeling(int error)
 {
 	if (error == 0)
-		ft_putstr("Invalid Input\n");
+		ft_fd_putstr(2, "Invalid Input\n");
 	if (error == 1)
-		ft_putstr("no input\n");
+		ft_fd_putstr(2, "No input\n");
 	if (error == 2)
-		ft_putstr("map error\n");
+		ft_fd_putstr(2, "Map error\n");
 	if (error == 3)
-		ft_putstr("No valid square\n");
+		ft_fd_putstr(2, "No valid square\n");
 	if (error == 4)
-		ft_putstr("open() / close() failed\n");
+		ft_fd_putstr(2, "open() failed\n");
+	if (error == 5)
+		ft_fd_putstr(2, "close() failed\n");
 }

@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
 char	*ft_strcpy(char *dest, char *src)
 {
 	int i;
@@ -22,4 +24,14 @@ char	*ft_strcpy(char *dest, char *src)
 	}
 	dest[i] = '\0';
 	return (dest);
+}
+
+int main(void)
+{
+	char a1[] = "test";
+	char a2[] = "rarl";
+
+	printf("%s", ft_strcpy(a1, a2));
+	return (0);
+
 }

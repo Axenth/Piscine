@@ -6,7 +6,7 @@
 /*   By: jlensing <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/08/15 18:50:12 by jlensing       #+#    #+#                */
-/*   Updated: 2019/08/16 15:29:44 by jlensing      ########   odam.nl         */
+/*   Updated: 2019/08/16 15:29:14 by jlensing      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ int		print_time(int i)
 {
 	if (i > 24)
 	{
+		printf("%d", 0);
 		return (i - 24);
 	}
 	if (i == 0)
@@ -39,7 +40,7 @@ int		print_time(int i)
 
 void	ft_takes_place(int hour)
 {
-	if (hour > 24 || hour < 0)
+	if (hour > 25)
 		return ;
 	printf("%s", "THE FOLLOWING TAKES PLACE BETWEEN ");
 	printf("%d", print_time(hour));
@@ -50,4 +51,10 @@ void	ft_takes_place(int hour)
 	printf("%s", ".00 ");
 	print_format(hour + 1);
 	printf("\n");
+}
+
+int main (void)
+{
+	ft_takes_place(24);
+	return (0);
 }
